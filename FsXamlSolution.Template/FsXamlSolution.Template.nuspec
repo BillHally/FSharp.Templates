@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
-        <id>FsXamlSolution.Template</id>
+        <id>BillHally.FsXamlSolution.Template</id>
         <version>0.1.0</version>
         <title>FsXaml solution template for dotnet-new</title>
         <summary>A dotnet-new template for FsXaml WPF applications.</summary>

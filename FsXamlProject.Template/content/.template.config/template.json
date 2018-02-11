@@ -2,7 +2,7 @@
     "author": "Bill Hally",
     "classifications": [ "WPF" ],
     "name": "FsXamlProject",
-    "identity": "fsxamlProject",
+    "identity": "BillHally.fsxamlProject",
     "shortName": "fsxaml",
     "tags": {
         "language": "F#"

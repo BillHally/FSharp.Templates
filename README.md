@@ -15,8 +15,8 @@ Ther are 2 FsXaml templates (FsXamlSolution and FsXamlProject). They both:
 
 ```powershell
 # 1. Install the templates
-dotnet new -i FsXamlSolution.Template
-dotnet new -i FsXamlProject.Template
+dotnet new -i BillHally.FsXamlSolution.Template
+dotnet new -i BillHally.FsXamlProject.Template
 
 # 2. Create a new solution and project
 dotnet new fsxamlsln -lang 'f#' -n AProject

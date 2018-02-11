@@ -2,7 +2,7 @@
     "author": "Bill Hally",
     "classifications": [ "WPF" ],
     "name": "FsXamlSolution",
-    "identity": "FsXamlSolution",
+    "identity": "BillHally.FsXamlSolution",
     "groupIdentity": "fsxaml",
     "shortName": "fsxamlsln",
     "tags": {
