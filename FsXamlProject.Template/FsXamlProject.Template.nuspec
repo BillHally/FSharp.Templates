@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>FsXamlProject.Template</id>
+        <version>0.1.0</version>
+        <title>FsXaml project template for dotnet-new</title>
+        <summary>A dotnet-new template for FsXaml WPF applications.</summary>
+        <description>A template for dotnet-new to create a project
+  which uses FsXaml to create a WPF application.</description>
+        <authors>Bill Hally</authors>
+        <owners>Bill Hally</owners>
+        <projectUrl>https://github.com/BillHally/FSharp.Templates</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <releaseNotes></releaseNotes>
+        <language>en-GB</language>
+        <tags>f# WPF project dotnet new template</tags>
+        <packageTypes>
+            <packageType name="Template" />
+        </packageTypes>
+    </metadata>
+</package>

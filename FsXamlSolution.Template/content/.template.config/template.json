@@ -1,0 +1,27 @@
+{
+    "author": "Bill Hally",
+    "classifications": [ "WPF" ],
+    "name": "FsXamlSolution",
+    "identity": "FsXamlSolution",
+    "groupIdentity": "fsxaml",
+    "shortName": "fsxamlsln",
+    "tags": {
+        "language": "F#",
+        "type": "Project"
+    },
+    "sourceName": "SourceName",
+    "preferNameDirectory" : "true",
+    
+    "guids": [
+        "5420220F-C118-4E0F-90D5-F40DF8D07C59",
+        "11258333-876B-4BED-ACD1-96E70E8BB75B"
+    ],
+
+    "symbols": {
+        "targetFramework": {
+            "type": "parameter",
+            "defaultValue": "net471",
+            "replaces":"targetFramework"
+        }
+    }
+}

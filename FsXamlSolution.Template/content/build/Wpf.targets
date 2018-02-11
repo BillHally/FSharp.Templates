@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildProjectDirectory)\Wpf.targets</MSBuildAllProjects>
+  </PropertyGroup>
+  <ItemGroup>
+    <PropertyPageSchema Include="$(MSBuildThisFileDirectory)Rules/Wpf.ProjectItemsSchema.xml">
+      <Context>Project</Context>
+    </PropertyPageSchema>
+    <PropertyPageSchema Include="$(MSBuildThisFileDirectory)../packages/MSBuild.Sdk.Extras/build/platforms/languageTargets/Rules/Resource.xml">
+      <Context>File;BrowseObject</Context>
+    </PropertyPageSchema>
+  </ItemGroup>
+</Project>

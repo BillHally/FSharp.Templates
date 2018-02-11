@@ -1,0 +1,7 @@
+*.suo
+*.user
+obj
+bin
+*.exe
+paket-files
+!.paket/paket.exe # This should be paket.bootstrapper.exe in "magic" mode

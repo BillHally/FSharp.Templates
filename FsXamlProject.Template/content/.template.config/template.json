@@ -1,0 +1,32 @@
+{
+    "author": "Bill Hally",
+    "classifications": [ "WPF" ],
+    "name": "FsXamlProject",
+    "identity": "fsxamlProject",
+    "shortName": "fsxaml",
+    "tags": {
+        "language": "F#"
+    },
+    "sourceName": "SourceName",
+    "preferNameDirectory" : "true",
+
+    "symbols": {
+        "targetFramework": {
+            "type": "parameter",
+            "defaultValue": "net471",
+            "replaces":"targetFramework"
+        }
+   },
+
+   "primaryOutputs": [
+    {
+        "path": "SourceName/SourceName.fsproj"
+    }],
+    
+    "postActions": [{
+        "description": "Add project to solution",
+        "manualInstructions": [ { "text": "Run 'dotnet sln add SourceName'" }  ],
+        "actionId": "D396686C-DE0E-4DE6-906D-291CD29FC5DE",
+        "continueOnError": true
+    }]
+}
