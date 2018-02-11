@@ -33,25 +33,6 @@ msbuild /p:Configuration=Debug /t:Restore,Build /v:minimal
 dotnet run --no-build --project SecondProject/SecondProject.fsproj
 ```
 
-1. Install the templates:
-    ```powershell
-    dotnet new -i FsXaml.Templates
-    ```
-
-1. Create a new solution and project:
-    ```powershell
-    dotnet new fsxamlsln -lang 'f#' -n AProject
-    ```
-1. Build the solution:
-    ```powershell
-    cd AProject
-    .paket/paket install
-    msbuild /p:Configuration=Debug /t:Restore,Build /v:minimal
-    ```
-1. Run the application:
-    ```powershell
-    dotnet run --no-build --project AProject/AProject.fsproj
-    ```
 ## FsXamlSolution
 
 This template creates a solution with the following layout:
