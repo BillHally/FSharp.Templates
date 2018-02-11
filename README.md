@@ -1,14 +1,17 @@
-# FsXaml.Templates
+# FSharp.Templates
 
-This Nuget package adds 2 templates (FsXamlSolution and FsXamlProject) for
-`dotnet new` which:
+This repository contains various templates for use with the dotnet CLI "new"
+command.
+
+## FsXaml templates
+
+Ther are 2 FsXaml templates (FsXamlSolution and FsXamlProject). They both:
 
 1. Use the new "SDK-style" project format
 1. Enable use of FsXaml to create WPF applications
 1. Use Paket to handle dependencies
 
-
-## Example usage
+### Example usage
 
 ```powershell
 # 1. Install the templates
@@ -33,7 +36,7 @@ msbuild /p:Configuration=Debug /t:Restore,Build /v:minimal
 dotnet run --no-build --project SecondProject/SecondProject.fsproj
 ```
 
-## FsXamlSolution
+### FsXamlSolution
 
 This template creates a solution with the following layout:
 
@@ -62,5 +65,13 @@ files depend on the Nuget package `MSBuild.Sdk.Extras` - I'll look at getting th
 relevant changes made directly in that package when I get a chance, at which
 point the folder will no longer be needed.
 
-## FsXamlProject
+### FsXamlProject
 
+This template is essentially just a subset of FsXamlSolution - it creates only
+the project, and adds it to an existing solution.
+
+**IMPORTANT:** it won't work unless the solution has the "build" folder and
+"paket.dependencies" which are created by the FsXamlSolution template, so if you
+want to add to an existing solution, you'll need to create a dummy solution
+using that template and manually copy the relevant bits across to your existing
+solution.
