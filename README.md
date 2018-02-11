@@ -14,22 +14,26 @@ Ther are 2 FsXaml templates (FsXamlSolution and FsXamlProject). They both:
 ### Example usage
 
 ```powershell
-# 1. Install the templates
-dotnet new -i BillHally.FsXamlSolution.Template
-dotnet new -i BillHally.FsXamlProject.Template
+# 1. Download the templates e.g.:
+wsl wget https://github.com/BillHally/FSharp.Templates/releases/download/v0.1.0/BillHally.FsXamlSolution.Template.0.1.0.nupkg
+wsl wget https://github.com/BillHally/FSharp.Templates/releases/download/v0.1.0/BillHally.FsXamlProject.Template.0.1.0.nupkg
 
-# 2. Create a new solution and project
+# 2. Install the templates
+dotnet new -i BillHally.FsXamlSolution.Template.0.1.0.nupkg
+dotnet new -i BillHally.FsXamlProject.Template.0.1.0.nupkg
+
+# 3. Create a new solution and project
 dotnet new fsxamlsln -lang 'f#' -n AProject
 
-# 3. Build the solution
+# 4. Build the solution
 cd AProject
 .paket/paket install
 msbuild /p:Configuration=Debug /t:Restore,Build /v:minimal
 
-# 4. Run the application
+# 5. Run the application
 dotnet run --no-build --project AProject/AProject.fsproj
 
-# 5. Add a second project, build and run it
+# 6. Add a second project, build and run it
 dotnet new fsxaml -lang 'f#' -n SecondProject
 .paket/paket install
 msbuild /p:Configuration=Debug /t:Restore,Build /v:minimal
